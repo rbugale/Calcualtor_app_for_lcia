@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Info</title>
+    <script>
+        function displayInfo() {
+            var age = document.getElementById("age").value;
+            var name = document.getElementById("name").value;
+            var result = "Hi, my name is " + name + ", and I am " + age*2 + " years old.";
+            document.getElementById("output").innerText = result;
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter your details</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age"><br><br>
+
+    <button onclick="displayInfo()">Submit</button>
+
+    <p id="output"></p>
+</body>
+</html>

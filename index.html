@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>User Info</title>
+    <title>LCA tool</title>
     <script>
         function displayInfo() {
-            var age = document.getElementById("age").value;
-            var name = document.getElementById("name").value;
-            var result = "Hi, my name is " + name + ", and I am " + age*2 + " years old.";
+            var urea = document.getElementById("urea").value;
+            var diesel = document.getElementById("diesel").value;
+            var result = "Hi, your inputs are " + urea + ", and total emissions are " + diesel*2 + " CO2eq";
             document.getElementById("output").innerText = result;
         }
     </script>
 </head>
 <body>
-    <h2>Enter your details</h2>
-    <label for="name">Name:</label>
-    <input type="text" id="name"><br><br>
+    <h2>Enter your inventory details</h2>
+    <label for="urea">Your amount of Urea:</label>
+    <input type="number" id="urea"><br><br>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age"><br><br>
+    <label for="diesel"> Your amount of Diesel:</label>
+    <input type="number" id="diesel"><br><br>
 
     <button onclick="displayInfo()">Submit</button>
 
